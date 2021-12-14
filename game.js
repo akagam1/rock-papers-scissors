@@ -12,7 +12,7 @@ function playerSelection() {
 }
 
 function playRound(player,computer) {
-    if (player == "Rock") {
+    if (player == "rock") {
 
         if (computer == "Rock") {
             return "It is a tie";
@@ -26,7 +26,7 @@ function playRound(player,computer) {
         }
     }
 
-    if (player == "Paper") {
+    if (player == "paper") {
 
         if (computer == "Paper") {
             return "It is a tie";
@@ -40,7 +40,7 @@ function playRound(player,computer) {
         }
     }
 
-    if (player == "Scissors") {
+    if (player == "scissors") {
 
         if (computer == "Scissors") {
             return "It is a tie";
@@ -57,7 +57,7 @@ function playRound(player,computer) {
 
 const games = prompt("How many games do you want to play?");
 for (let i=1; i<=games; i++) {
-    const player = playerSelection();
+    const player = playerSelection().toLowerCase();
     const computer = computerPlay();
     alert(playRound(player, computer));
 }
