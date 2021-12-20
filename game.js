@@ -55,12 +55,6 @@ function playRound(player,computer) {
     }
 }
 
-const games = prompt("How many games do you want to play?");
-for (let i=1; i<=games; i++) {
-    const player = playerSelection().toLowerCase();
-    const computer = computerPlay();
-    alert(playRound(player, computer));
-}
 
 
 
