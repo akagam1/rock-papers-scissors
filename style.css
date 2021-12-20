@@ -1,0 +1,33 @@
+body {background-color: aliceblue;}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    max-height: fit-content;
+    max-width: fit-content;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn {
+    margin: 20px;
+    padding: 5px;
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: rgb(20, 243, 0);
+    border-style: solid;
+}
+
+.btn:hover {
+    background: #f44336;
+    color: white;
+  }
