@@ -7,10 +7,6 @@ function computerPlay() {
     return choice[randInt()];
 }
 
-function playerSelection() {
-    return prompt("Enter Rock, Paper or Scissors");
-}
-
 function playRound(player,computer) {
     if (player == "rock") {
 
@@ -55,7 +51,14 @@ function playRound(player,computer) {
     }
 }
 
+const rockBut = document.getElementById('rockBut');
+const paperBut = document.getElementById('paperBut');
+const scissorBut = document.getElementById('scissorBut');
 
+rockBut.addEventListener('click', () => clicked('rock'));
+paperBut.addEventListener('click', () => clicked('paper'));
+scissorBut.addEventListener('click', () => clicked('scissors'));
 
-
-
+function clicked(playerSelection) {
+    alert(playerSelection);
+}
