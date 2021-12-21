@@ -11,36 +11,45 @@ body {background-color: rgb(51, 50, 50);
     height: 100vh;
 }
 
-.buttons {
+.display {
     display: flex;
-    justify-content: space-evenly;
-
-    max-height: fit-content;
-    max-width: fit-content;
+    justify-content: space-between;
+    width: 1000px;
+    
 }
 
-.display {
+
+.playerPoint, .computerPoint {
     width: 400px;
     height: 50px;
     border-radius: 20px;
     border-width: 5px;
     border-color: rgb(255, 255, 255);
     border-style: solid;
+    background-color: rgb(6, 1, 34);
+}
 
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: fit-content;
+    max-width: fit-content;
 }
 
 .btn {
     margin: 20px;
-    padding: 5px;
-    color: rgb(236, 106, 106);
+    padding: 10px;
+    color: rgb(241, 233, 233);
     background-color: rgb(51, 50, 50);
+
+   text-align: center;
 
     font-size: 50px;
     font-weight: bolder;
 
     border-radius: 20px;
     border-width: 5px;
-    border-color: rgb(20, 243, 0);
+    border-color: rgb(78, 38, 209);
     border-style: solid;
 }
 
